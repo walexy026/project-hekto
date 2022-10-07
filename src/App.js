@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import NavBarUpper from './Components/NavBarUpper/NavBarUpper';
 import Footer from './Components/Footer/Footer';
+import FooterDown from './Components/FooterDown/FooterDown';
 import MyAccount from './Pages/MyAccount/MyAccount'
 import OrderCompleted from './Pages/OrderCompleted/OrderCompleted'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
@@ -21,6 +22,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer/>
+      <FooterDown/>
+
     </div>
   );
 }

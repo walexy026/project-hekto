@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footerDown{
+    background-color: #E7E4F8;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footerDown p{
+    color: #9DA0AE;
+    font-size: 14px;
+}
+.socials2{
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    gap: 0.5rem;
+}
