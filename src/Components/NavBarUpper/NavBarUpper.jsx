@@ -1,5 +1,5 @@
 import React from 'react'
-import 'NavBarUpper.css'
+import './NavBarUpper.css'
 
 const NavBarUpper = () => {
   return (

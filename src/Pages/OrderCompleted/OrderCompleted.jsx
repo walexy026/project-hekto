@@ -1,5 +1,5 @@
 import React from 'react'
-import 'OrderCompleted.css'
+import './OrderCompleted.css'
 
 const OrderCompleted = () => {
   return (
