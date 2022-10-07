@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <ul>
         <a href="">
-          <li>Categories</li>
+          <li className="firstLink">Categories</li>
         </a>
         <a href="">
           <li>Laptops & Computers</li>
@@ -35,7 +35,7 @@ const Footer = () => {
       </ul>
       <ul>
         <a href="">
-          <li>Customer Care</li>
+          <li className="firstLink">Customer Care</li>
         </a>
         <a href="">
           <li>My Account</li>
@@ -55,7 +55,7 @@ const Footer = () => {
       </ul>
       <ul>
         <a href="">
-          <li>Pages</li>
+          <li className="firstThird">Pages</li>
         </a>
         <a href="">
           <li>Blog</li>

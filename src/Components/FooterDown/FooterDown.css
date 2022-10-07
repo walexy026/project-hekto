@@ -5,20 +5,26 @@
 }
 .footerDown{
     background-color: #E7E4F8;
-    height: 2rem;
+    height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .footerDown p{
     color: #9DA0AE;
     font-size: 14px;
+    margin-right: 4rem;
 }
 .socials2{
     padding-top: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    /* width: 30%; */
     gap: 0.5rem;
+}
+@media only screen and (max-width:768px) {
+    .socials2{
+margin-right: 1rem;
+}
 }
