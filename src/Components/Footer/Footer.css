@@ -8,7 +8,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  /* gap: 3rem; */
   min-height: 18rem;
   padding-bottom: 3rem;
 }
@@ -21,6 +21,7 @@ ul a li {
   font-size: 14px;
   color: #8a8fb9;
   line-height: 1.8rem;
+  padding-left: 2rem;
 }
 .firstLink{
     padding-bottom: 1rem;

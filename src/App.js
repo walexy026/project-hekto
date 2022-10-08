@@ -7,24 +7,29 @@ import MyAccount from './Pages/MyAccount/MyAccount'
 import OrderCompleted from './Pages/OrderCompleted/OrderCompleted'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart'
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter,Route,Routes,Link} from 'react-router-dom'
+import Partner from './Components/Partners/Partner';
+import ProductTitle from './Components/ProductTitle/ProductTitle';
 function App() {
   return (
+      <BrowserRouter>
     <div className="App">
       <NavBarUpper/>
       <NavBar/>
-      <BrowserRouter>
+      <ProductTitle/>
         <Routes>
           <Route path='/' element={<ProductDetails/>}/>
-          <Route path='/ShoppingCart' element={<ShoppingCart/>}/>
-          <Route path='/MyAccount' element={<MyAccount/>}/>
-          <Route path='/OrderCompleted' element={<OrderCompleted/>}/>
+          <Route path='/shoppingCart' element={<ShoppingCart/>}/>
+          <Route path='/myAccount' element={<MyAccount/>}/>
+          <Route path='/orderCompleted' element={<OrderCompleted/>}/>
         </Routes>
-      </BrowserRouter>
+
+      <Partner/>
       <Footer/>
       <FooterDown/>
 
-    </div>
+       </div>
+      </BrowserRouter>
   );
 }
 

@@ -1,20 +1,21 @@
 import React, { Fragment } from 'react'
 import classes from './NavBar.module.css';
-import searchIcon from '../../Assets/searchIcon.svg'
-// import { Link } from 'react-router-dom';
+import searchIcon from '../../Assets/searchIcon.svg';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <Fragment>
+    <>
 <nav className={classes.navBarLower}>
   <div className={classes.logo}>Hekto</div>
   <ul className={classes.navLink}>
-    <a href=""><li>Home</li></a>
-    <a href=""><li>Pages</li></a>
-    <a href=""><li>Products</li></a>
-    <a href=""><li>Blog </li></a>
-    <a href=""><li>Shop</li></a>
-    <a href=""><li>Contact</li></a>
+    <li className={classes.navLinks}>Home</li>
+    <li className={classes.navLinks}>Pages</li>
+  <li className={classes.navLinks}> <Link to="/" >Products</Link></li> 
+    <li className={classes.navLinks}>Blog </li>
+  <li className={classes.navLinks}> <Link to="./shoppingcart" >Shop</Link></li> 
+    
+    <li className={classes.navLinks}>Contact</li>
     {/* <Link></Link> */}
     {/* <Link></Link> */}
     {/* <Link></Link> */}
@@ -26,7 +27,7 @@ const NavBar = () => {
     <img src={searchIcon} className={classes.search} alt="searchIcon" />
   </form>
 </nav>
-    </Fragment>
+    </>
   )
 }
 
