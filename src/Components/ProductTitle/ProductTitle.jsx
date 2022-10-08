@@ -1,8 +1,8 @@
 import React from 'react'
 import './ProductTitle.css'
-const ProductTitle = () => {
+const ProductTitle = (props) => {
   return (
-    <div className='title'>ProductTitle</div>
+    <div className='title' na= 'bolu'>ProductTitle  </div>
   )
 }
 
