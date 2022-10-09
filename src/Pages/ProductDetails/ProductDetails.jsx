@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./ProductDetails.css";
 import bagUS from "../../Assets/bagUS.svg";
 import readingLamp from "../../Assets/readingLamp.svg";
@@ -9,8 +9,10 @@ import wishlistBlue from "../../Assets/wishlist2.svg";
 import instagram from "../../Assets/instagRaam.svg";
 import facebook from "../../Assets/faceBOOOK.svg";
 import twitter from "../../Assets/twiiiiter.svg";
+import Description from "../../Components/Description/Description";
 const ProductDetails = () => {
   return (
+    <Fragment>
     <div className="productWrapper">
       <div className="productDescription">
         <div className="bagTypes">
@@ -21,23 +23,45 @@ const ProductDetails = () => {
         <div>
           <img src={handBag} alt="handBag" />
         </div>
-        <div>
+        <div className="productText">
           <h3>Playwood arm chair</h3>
-          <span><img src={star} alt="star" /><b>(22)</b> </span>
-         <div> <>$32.00</><s>$32.00</s></div>
-         <p>Color</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.</p>
-         <span><b>Add To cart</b> <img src={wishlistBlue} alt="" /> </span>
-         <p>Categories:</p>
-         <p>Tags</p>
-         <span><b>Share</b>
-         <img src={facebook} alt="facebook" />
-         <img src={instagram} alt="instagram" />
-         <img src={twitter} alt="twitter" />
-         </span>
+
+          <span>
+            <span>
+              <img src={star} alt="star" />
+              <img src={star} alt="star" />
+              <img src={star} alt="star" />
+              <img src={star} alt="star" />
+              <img src={star} alt="star" />
+            </span>
+            <b id="b1">(22)</b>
+          </span>
+          <div id="bs">
+            <b id="b2">$32.00</b>
+            <s id="s1">$32.00</s>
+          </div>
+          <p id="p1">Color</p>
+          <p id="p2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            tellus porttitor purus, et volutpat sit.
+          </p>
+          <span id="imgb3">
+            <b id="b3">Add To cart</b>
+            <img src={wishlistBlue} alt="wishlistBlue" />
+          </span>
+          <p id="p3">Categories:</p>
+          <p id="p4">Tags</p>
+          <span id="shareSM">
+            <b id="b4">Share</b>
+            <img src={facebook} alt="facebook" />
+            <img src={instagram} alt="instagram" />
+            <img src={twitter} alt="twitter" />
+          </span>
         </div>
       </div>
     </div>
+    <Description/>
+    </Fragment>
   );
 };
 
