@@ -3,7 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
-.title {
+.titleBackground {
   background: #f6f5ff;
-  height: 10rem;
+  height: 13rem;
+  position: relative;
+  
+}
+.titlePD {
+  color: #101750;
+  /* text-align: center; */
+  font-weight: 500;
+  display: inline;
+  position: absolute;
+  left: 13rem;
+  top: 4rem;
+}
+.linkWrapper {
+  display: inline;
+  text-align: center;
+  position: absolute;
+  left: 13rem;
+  top: 7rem;
+}
+#Pd1,
+#Pd2 {
+  color: #101750;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+#Pd3 {
+  font-weight: 500;
+  color: #fb2e86;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:560px) {
+  .titlePD {
+    color: #101750;
+    font-weight: 500;
+    position: absolute;
+    left: 6rem;
+    top: 4rem;
+  }
+  .linkWrapper {
+    position: absolute;
+    left: 6rem;
+    top: 7rem;
+  }  
+}
+@media only screen and (max-width:400px) {
+  .titlePD {
+    color: #101750;
+    font-weight: 500;
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+  }
+  .linkWrapper {
+    position: absolute;
+    left: 4rem;
+    top: 7rem;
+  }  
 }

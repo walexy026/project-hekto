@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import classes from "./NavBar.module.css";
+import "./NavBar.css";
 import searchIcon from "../../Assets/searchIcon.svg";
 import { Link } from "react-router-dom";
 // import { navLink, NavMenu, Bars, } from "./NavBarElement";
@@ -7,43 +7,46 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const NavBar = () => {
-  const { toggle, setToggle } = useState(true);
-
+  const  [toggle, setToggle]  = useState(true);
+  // const handleClick = () => setToggle(!toggle);
   function handleClick() {
     return setToggle((preToggle) => !preToggle);
   }
   return (
     <Fragment>
-      <nav className={classes.navBarLower}>
-        <div className={classes.logo}>Hekto</div>
-        <ul className={classes.navLink}>
-          {/* <ul className={toggle ? 'ul' : 'navShow'}>  */}
-          <li className={classes.active}>Home</li>
-          <li className={classes.navLinks}>Pages</li>
-          <li className={classes.navLinks}>
+      <nav className='navBarLower'>
+        <div className='logo'>Hekto</div>
+        <button className='hamburger' onClick={handleClick}>
+          {toggle ? 
+            <span className='open'>&#9776;</span>
+           : 
+            <span className='close'>&times;</span>
+          }
+        </button>
+        {/* <ul className='navLink' > */}
+          <ul className={toggle ? 'navLink' : 'navShow'}> 
+          <li className='active'>Home</li>
+          <li className='navLinks'>Pages</li>
+          <li className='navLinks'>
             {" "}
-            <Link className={classes.navLinks} to="/">Products</Link>
+            <Link className='navLinks' to="/">
+              Products
+            </Link>
           </li>
-          <li className={classes.navLinks}>Blog </li>
-          <li className={classes.navLinks}>
+          <li className='navLinks'>Blog </li>
+          <li className='navLinks'>
             {" "}
-            <Link className={classes.navLinks} to="./shoppingcart">Shop</Link>
+            <Link className='navLinks' to="./shoppingcart">
+              Shop
+            </Link>
           </li>
-          <li className={classes.navLinks}>Contact</li>
-            </ul>
-          <form action="" className={classes.formNav}>
-            <input
-              type="search"
-              className={classes.inputsearch}
-              name=""
-              id=""
-            />
-            <button type="submit" className={classes.btn}></button>
-            {/* <img src={searchIcon} className={classes.search} alt="searchIcon" /> */}
-          </form>
-        <div className="hamburger" onClick={handleClick}>
-          {toggle ? <span>&#9776;</span> : <span>&times;</span>}
-        </div>
+          <li className='navLinks'>Contact</li>
+        </ul>
+        <form action="" className='formNav'>
+          <input type="search" className='inputsearch' name="" id="" />
+          <button type="submit" className='btn'></button>
+          {/* <img src={searchIcon} className='search' alt="searchIcon" /> */}
+        </form>
       </nav>
     </Fragment>
   );
