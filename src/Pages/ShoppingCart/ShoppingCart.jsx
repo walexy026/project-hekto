@@ -6,7 +6,7 @@ import bagTwo from '../../Assets/bagTwo.svg'
 import bagThree from '../../Assets/bagThree.svg'
 import bagFour from '../../Assets/bagFour.svg'
 import bagFive from '../../Assets/bagFive.svg'
-// import CartTotal from '../../Components/CartTotal/CartTotal'
+import CartTotal from '../../Components/CartTotal/CartTotal'
 
 
 const ShoppingCart = () => {
@@ -28,7 +28,7 @@ const ShoppingCart = () => {
             <Cart heading={items.heading} img={items.logo} name={items.name} color={items.color} size={items.size} price={items.price} decrease={items.decrease} count={items.count} increase={items.increase} total={items.total} key={items.id}/>
           ))
         }
-      {/* <CartTotal/> */}
+      <CartTotal/>
       </div>
     </div>
   )

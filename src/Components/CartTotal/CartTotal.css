@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.cartTotal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cartTotal h3 {
+  color: #1d3178;
+  /* color: red; */
+}
+.subtotal {
+  background-color: #f4f4fc;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.subtotal b {
+  color: #1d3178;
+}
+.subtotal i {
+  color: #8a91ab;
+  font-size: 12px;
+}
+.subtotal button {
+  color: #ffffff;
+  background-color: #19d16f;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.shipping {
+  background-color: #f4f4fc;
+  width: 50%;
+}
+.shipping button {
+  background-color: #fb2e86;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem;
+  width: 50%;
+}
+.shipping form{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4FC;
+}
+#shippingCountry{
+    border-bottom:2px solid #C7CEE4;
+    padding: 1rem;
+}
+#shippingState{
+    border-bottom:2px solid #C7CEE4;
+    padding: 1rem;
+
+}
+#PostalCode{
+    border-bottom:2px solid #C7CEE4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

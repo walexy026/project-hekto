@@ -1,7 +1,7 @@
 import "./Cart.css";
 
 import React from "react";
-import CartTotal from "../CartTotal/CartTotal";
+// import CartTotal from "../CartTotal/CartTotal";
 
 const Cart = (props) => {
   return (
@@ -36,7 +36,7 @@ const Cart = (props) => {
         </div>
         <hr />
       </div>
-      <CartTotal/>
+      {/* <CartTotal/> */}
     </div>
   );
 };
