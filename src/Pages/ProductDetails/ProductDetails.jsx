@@ -10,6 +10,7 @@ import instagram from "../../Assets/instagRaam.svg";
 import facebook from "../../Assets/faceBOOOK.svg";
 import twitter from "../../Assets/twiiiiter.svg";
 import Description from "../../Components/Description/Description";
+import RelatedProduct from "../../Components/RelatedProducts/RelatedProduct";
 const ProductDetails = () => {
   return (
     <Fragment>
@@ -61,6 +62,7 @@ const ProductDetails = () => {
       </div>
     </div>
     <Description/>
+    <RelatedProduct/>
     </Fragment>
   );
 };

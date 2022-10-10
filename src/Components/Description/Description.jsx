@@ -10,10 +10,10 @@ const Description = () => {
     <div className="descriptionWrapper">
     <div className="description">
       <nav className="desNav">
-        <Link>Description</Link>
-        <Link>Additional Info</Link>
-        <Link>Reviews</Link>
-        <Link>Video</Link>
+        <Link className="desLink line">Description</Link>
+        <Link className="desLink">Additional Info</Link>
+        <Link className="desLink">Reviews</Link>
+        <Link className="desLink">Video</Link>
       </nav>
       <h3>Varius tempor.</h3>
       <p>
@@ -28,7 +28,7 @@ const Description = () => {
       <h3>More details</h3>
 
       <div>
-        <div>
+        <div className="desdiv" >
         <img src={arrowright} alt="arrowright" />{" "}
         <b>
           Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam
@@ -36,7 +36,7 @@ const Description = () => {
           nec. Dui, massa viverr .
         </b>
         </div>
-        <div>
+        <div className="desdiv">
         <img src={arrowBlue} alt="arrowright" />{" "}
         <b>
           Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam
@@ -44,7 +44,7 @@ const Description = () => {
           nec. Dui, massa viverr .
         </b>
         </div>
-        <div>
+        <div className="desdiv">
         <img src={arrowright} alt="arrowright" />{" "}
         <b>
           Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam
@@ -52,7 +52,7 @@ const Description = () => {
           nec. Dui, massa viverr .
         </b>
         </div>
-        <div>
+        <div className="desdiv">
         <img src={arrowright} alt="arrowright" />{" "}
         <b>
           Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam

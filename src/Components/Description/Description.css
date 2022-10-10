@@ -18,16 +18,42 @@
     background-color: #F9F8FE;
     margin-left: -7rem;
 }
-.description b, .description p{
+ .description p{
     font-size: 12px;
     font-weight: 400;
     color: #A9ACC6;
-    padding-top: 1rem;
     padding-bottom: 2rem;
-
 }
 .description h3{
     /* font-size: 14px; */
     color: #151875;
     padding-bottom: 1rem;
+}
+.desLink{
+    text-decoration: none;
+    color: #151875;
+    font-weight: 600;
+}
+.line{
+    text-decoration: underline;
+
+}
+.desLink:hover{
+    text-decoration: underline;
+    color: #151875;
+    font-weight: 600;
+}
+.desdiv{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.desdiv b{
+    padding-bottom: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A9ACC6;
+}
+.desdiv img{
+    padding-bottom: 1.7rem;
 }
