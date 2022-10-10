@@ -9,7 +9,7 @@
 }
 .orderText {
   width: 50%;
-  height: 300px;
+  min-height: 300px;
   margin: 2rem;
   padding: 2rem;
   border-bottom: dotted #d2d1d1;
@@ -49,5 +49,11 @@ left: -1.7rem;
 #checkdone{
     position: absolute;
     top: -2rem;
-    
+
+}
+
+@media only screen and (max-width:768px){
+    .orderText{
+        width: 80%;
+    }
 }
