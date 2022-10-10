@@ -1,5 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.order {
+  display: flex;
+  justify-content: center;
+}
+.orderText {
+  width: 50%;
+  height: 300px;
+  margin: 2rem;
+  padding: 2rem;
+  border-bottom: dotted #d2d1d1;
+  border-left: dotted #d2d1d1;
+  position: relative;
+}
+.orderText h3 {
+  padding-bottom: 2rem;
+  color: #101750;
+}
+.orderText p {
+  padding-bottom: 2rem;
+  color: #8d92a7;
+}
+.orderText button {
+  background-color: #ff1788;
+  color: #ffffff;
+  border: #ff1788;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+.orderText button:hover {
+  color: #ff1788;
+  background-color: #d4cdcd;
+}
+#clock{
+position: absolute;
+top: 0;
+left: -1.7rem;
+}
+#checklist{
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+}
+#checkdone{
+    position: absolute;
+    top: -2rem;
+    
 }
