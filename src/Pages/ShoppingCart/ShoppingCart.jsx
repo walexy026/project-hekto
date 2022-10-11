@@ -20,7 +20,7 @@ const ShoppingCart = () => {
   ]
 
   return (
-    <div>ShoppingCart
+    <div className='shopCart'>
 
 <div className='cartMap'>
         {
@@ -28,6 +28,12 @@ const ShoppingCart = () => {
             <Cart heading={items.heading} img={items.logo} name={items.name} color={items.color} size={items.size} price={items.price} decrease={items.decrease} count={items.count} increase={items.increase} total={items.total} key={items.id}/>
           ))
         }
+        <div className='btncartUpdate'>
+        <button id='btncart' type="submit">Update Curt</button>
+       <button id='btncart' type="submit">Clear Curt</button>
+        </div>
+      </div>
+      <div>
       <CartTotal/>
       </div>
     </div>

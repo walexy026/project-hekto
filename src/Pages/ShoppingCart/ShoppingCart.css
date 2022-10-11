@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.btncartUpdate{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btncart{
+    background-color:#FB2E86 ;
+    color:#FFFFFF ;
+    border-radius: 2px;
+    border: #FB2E86;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+#btncart:hover{
+    background-color: #c5bfbf;
+    color: #FB2E86;
+}
+.shopCart{
+    /* display: flex; */
+    justify-content: center;
+}

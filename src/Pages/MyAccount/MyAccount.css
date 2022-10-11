@@ -40,13 +40,25 @@
   background: #fb2e86;
   color: #ffffff;
   padding: 0.5rem;
+  cursor: pointer;
 }
+#submitLogin:hover{
+  background-color: #ededfc;
+  color: #fb2e86;
+}
+
 #loginEmail {
   border: 1px solid #c2c5e1;
 }
 #passwordLogin {
   border: 1px solid #c2c5e1;
   padding: 0.3rem;
+}
+.input.error{
+    border-color: red;
+}
+.input-feedback{
+    color: rgb(235, 54, 54)
 }
 
 @media only screen and (max-width: 768px) {
