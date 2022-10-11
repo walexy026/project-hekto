@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.cartDiv{
+    padding: 5rem;
+}
 .btncartUpdate{
+    /* width: 600px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 25rem;
+    margin: 2rem;
 }
 #btncart{
     background-color:#FB2E86 ;
@@ -21,6 +27,6 @@
     color: #FB2E86;
 }
 .shopCart{
-    /* display: flex; */
+    display: flex;
     justify-content: center;
 }

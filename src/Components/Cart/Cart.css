@@ -1,65 +1,93 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.cartWrapper{
-    display: flex;
-    justify-content: center;
+.cartWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.cartPricing{
-    width: 50%;
+.cartMap{
+    margin-top: 2rem;
 }
-.heading{
-    display: flex;
-    justify-content: space-between;
+.cartPricing {
+  width: 600px;
 }
-.heading h2{
-    color: #1D3178;
+.heading {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.cart{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.product{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.productdesc{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.productdesc h3{
-    font-size: 12px;
-}
-.productdesc b{
-    color: #A1A8C1;
-    font-weight: 400;
-    font-size: 12px;
-}
-.quantity{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 1rem; */
-    padding: 0.2rem;
+#h3product{
+position: absolute;
+color: #1d3178;
+transform: translateX(-400px);
 
 }
-.quantity p{
-    padding: 5px;
-    color: #BEBFC2;
-    background-color: #F0EFF2;
-    font-size: 14px;
+#h3price{
+    position: absolute;
+    color: #1d3178;
+    transform: translateX(-155px);
+
 }
-.quantity button{
-    /* background-color: #F0EFF2; */
-    /* border: #F0EFF2; */
-    color: #BEBFC2;
-    cursor: pointer;
-    padding: 5px;
+#h3quantity{
+    position: absolute;
+    color: #1d3178;
+    transform: translateX(-20px);
+
+}
+#h3total{
+    position: absolute;
+    color: #1d3178;
+    transform: translateX(110px);
+
+}
+/* .heading h3 {
+  color: #1d3178;
+  padding-left: 4rem;
+} */
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.product {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.productdesc {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.productdesc h3 {
+  font-size: 12px;
+}
+.productdesc b {
+  color: #a1a8c1;
+  font-weight: 400;
+  font-size: 12px;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  padding: 0.2rem;
+}
+.quantity p {
+  padding: 5px;
+  color: #bebfc2;
+  background-color: #f0eff2;
+  font-size: 14px;
+}
+.quantity button {
+  /* background-color: #F0EFF2; */
+  /* border: #F0EFF2; */
+  color: #bebfc2;
+  cursor: pointer;
+  padding: 5px;
 }
