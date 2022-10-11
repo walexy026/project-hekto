@@ -1,6 +1,5 @@
 import "./CartTotal.css";
 import React from "react";
-import greenCheck from "../../Assets/greencheck.svg";
 
 const CartTotal = () => {
   return (
@@ -17,7 +16,6 @@ const CartTotal = () => {
           </div>
             <hr />
           <div className="checkout">
-            <img src={greenCheck} alt="" />{" "}
             <label htmlFor="" className="checkbox"> <i>Shipping & taxes calculated at checkout</i>
             <input type="checkbox" checked="check" name="" id="" />
             <span className="mark"></span>

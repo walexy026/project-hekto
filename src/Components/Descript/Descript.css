@@ -1,0 +1,44 @@
+
+.description{
+    /* text-align: start; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    width: 67%;
+    padding-bottom: 4rem;
+}.description p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #A9ACC6;
+    padding-bottom: 2rem;
+}
+.description h3{
+    /* font-size: 14px; */
+    color: #151875;
+    padding-bottom: 1rem;
+}
+
+.line{
+    text-decoration: underline;
+
+}
+.desLink:hover{
+    text-decoration: underline;
+    color: #151875;
+    font-weight: 600;
+}
+.desdiv{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.desdiv b{
+    padding-bottom: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A9ACC6;
+}
+.desdiv img{
+    padding-bottom: 1.7rem;
+}

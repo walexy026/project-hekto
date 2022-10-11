@@ -16,11 +16,20 @@ padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 .clothRating{
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+}
+.clothRating b{
+    font-size: 12px;
+    
+}
+.productPrice p{
+    font-size: 14px;
+    color: #151875;
+    
 }
 
 @media only screen and (max-width:768px) {
@@ -30,5 +39,8 @@ padding-bottom: 2rem;
         /* justify-content: center; */
         /* align-items: center; */
         gap: 1rem;
+    }
+    .relatedProduct h3{
+        padding-left: 3rem;
     }   
 }

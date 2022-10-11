@@ -11,9 +11,11 @@ import facebook from "../../Assets/faceBOOOK.svg";
 import twitter from "../../Assets/twiiiiter.svg";
 import Description from "../../Components/Description/Description";
 import RelatedProduct from "../../Components/RelatedProducts/RelatedProduct";
+import ProductTitle from "../../Components/ProductTitle/ProductTitle";
 const ProductDetails = () => {
   return (
     <Fragment>
+      <ProductTitle title ='ProductDetails' ProductDetails='ProductDetails'/>
     <div className="productWrapper">
       <div className="productDescription">
         <div className="bagTypes">
@@ -54,9 +56,9 @@ const ProductDetails = () => {
           <p id="p4">Tags</p>
           <span id="shareSM">
             <b id="b4">Share</b>
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
-            <img src={twitter} alt="twitter" />
+          <a href="https://facebook.com"><img src={facebook} alt="facebook" /></a>  
+           <a href="https://instagram.com"> <img src={instagram} alt="instagram" /></a>
+           <a href="https://twitter.com"> <img src={twitter} alt="twitter" /></a>
           </span>
         </div>
       </div>

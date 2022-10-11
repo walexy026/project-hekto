@@ -55,11 +55,11 @@ const RelatedProduct = () => {
             <p>$67.00</p>
         </div>
         <div className="productPrice">
-          <img src={topDigitalClock} alt="" />
+          <img src={topDigitalClock} alt="topDigitalClock" />
           <span className="clothRating">
             <b>Top Wall Digital Clock</b>
             <div>
-            <img src={star} alt="" />
+            <img src={star} alt="star" />
             <img src={star} alt="" />
             <img src={star} alt="" />
             <img src={starWhite} alt="" />

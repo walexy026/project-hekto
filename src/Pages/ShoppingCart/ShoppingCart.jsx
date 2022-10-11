@@ -7,6 +7,7 @@ import bagThree from "../../Assets/bagThree.svg";
 import bagFour from "../../Assets/bagFour.svg";
 import bagFive from "../../Assets/bagFive.svg";
 import CartTotal from "../../Components/CartTotal/CartTotal";
+import ProductTitle from "../../Components/ProductTitle/ProductTitle";
 
 const ShoppingCart = () => {
   const cartData = [
@@ -78,6 +79,8 @@ const ShoppingCart = () => {
   ];
 
   return (
+    <div>
+<ProductTitle title = 'ShoppingCart' ProductDetails = 'ShoppingCart'/>
     <div className="cartDiv">
       <div className="heading">
         <h3 id="h3product">Product</h3>
@@ -89,8 +92,8 @@ const ShoppingCart = () => {
         <div className="cartMap">
           {cartData.map((items) => (
             <Cart
-              // heading={items.heading}
-              img={items.logo}
+            // heading={items.heading}
+            img={items.logo}
               name={items.name}
               color={items.color}
               size={items.size}
@@ -100,8 +103,8 @@ const ShoppingCart = () => {
               increase={items.increase}
               total={items.total}
               key={items.id}
-            />
-          ))}
+              />
+              ))}
           <span className="btncartUpdate">
             <button id="btncart" type="submit">
               Update Curt
@@ -115,6 +118,7 @@ const ShoppingCart = () => {
           <CartTotal />
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -56,10 +56,10 @@ strong {
 .footerLogo p {
   font-size: 14px;
 }
-input[type='text']{
+/* input[type='text']{
 padding: 0.3rem;
 border: #8A8FB9;
-}
+} */
 placeholder{
     color: #8A8FB9;
 

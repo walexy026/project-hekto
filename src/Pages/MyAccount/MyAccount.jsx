@@ -1,91 +1,121 @@
 import React from "react";
-import "./MyAccount.css";
-import { Formik } from "formik";
-import * as EmailValidator from "email-validator";
-import * as Yup from "yup";
+import { useState } from "react";
+import clsx from "clsx";
+import styles from "./MyAccount.module.css";
+import { useLoginFormValidator } from "./FormValidator";
+import ProductTitle from "../../Components/ProductTitle/ProductTitle";
 
-const MyAccount = () => {
-  // <Formik
-  //   initialValues={{ email: "", password: "" }}
-  //   onSubmit={(values, { setSubmitting }) => {
-  //     setTimeout(() => {
-  //       console.log("logging in", values);
-  //       setSubmitting(false);
-  //     }, 500);
-  //   }}
-  // >
-    {/* validationSchema={Yup.object().shape({
-      email:Yup.string()
-      .email()
-      .required('Required')
-    })} */}
-    {/* validationSchema={Yup.object().shape({
-      email:Yup.strin)g()
-      .email()
-      .required('Required'),
-      password:Yup.string()
-      .required('No Password Provided.')
-      .min(8, 'Passwordis too short - should be 8 chars minimum')
-      .matches(/(?=.*[0-9])/, 'Password must contain a number.')
-    })} */}
-    // {(props) => {
-    //   const {
-    //     values,
-    //     touched,
-    //     errors,
-    //     isSubmitting,
-    //     handleChange,
-    //     handleBlur,
-    //     handleSubmit,
-    //   } = props;
-    
-      return (
-        <div className="accountLogin">
-          <div className="login">
-            <h3>Login</h3>
-            <p>Please login using account detail bellow.</p>
-            <form className="loginForm" action="">
-              <label htmlFor="email"></label>
-              <input
-                type="text"
-                name="email"
-                id="loginEmail"
-                placeholder="Email Address"
-                // value={values.email}
-                // onChange={handleChange}
-                // onBlur={handleBlur}
-                // className={errors.email && touched.email && 'error'}
-              />
-              <div className="input-feedback"></div>
-              <label htmlFor="email"></label>
-              <input
-                type="password"
-                name="password"
-                id="passwordLogin"
-                placeholder="Password"
-                // value={values.password}
-                // onChange={handleChange}
-                // onBlur={handleBlur}
-                // className={errors.password && touched.password && 'error'}
-              />
-              {/* {errors.password && touched.password && (
-                <div className="input-feedback">{errors.password}</div>
-              )} */}
-              <a>Forgot your password?</a>
-           <button type="submit"  id="submitLogin">Sign In</button>
-              {/* <input
-                type="button"
-                id="submitLogin"
-                disabled={isSubmitting}
-                value="Sign In"
-              /> */}
-              <a href="#">Don’t have an Account?Create account</a>
-            </form>
-          </div>
+const LoginForm = (props) => {
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const { errors, validateForm, onBlurField } = useLoginFormValidator(form);
+
+  const onUpdateField = (e) => {
+    const field = e.target.name;
+    const nextFormState = {
+      ...form,
+      [field]: e.target.value,
+    };
+    setForm(nextFormState);
+    if (errors[field].dirty)
+      validateForm({
+        form: nextFormState,
+        errors,
+        field,
+      });
+  };
+
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    const { isValid } = validateForm({ form, errors, forceTouchErrors: true });
+    if (!isValid) return;
+    alert(JSON.stringify(form, null, 2));
+  };
+  return (
+    <div>
+      <ProductTitle title="My Account" ProductDetails="My Account" />
+      <div className={styles.accountLogin}>
+        <div className={styles.login}>
+          <h3>Login</h3>
+          <h6>Please login using account detail below.</h6>
+          <form className={styles.loginForm} action="" onSubmit={onSubmitForm}>
+            <label htmlFor="email"></label>
+            <input
+              className={clsx(
+                styles.formField,
+                errors.email.dirty &&
+                  errors.email.error &&
+                  styles.formFieldError
+              )}
+              type="text"
+              name="email"
+              id="loginEmail"
+              placeholder="Email Address"
+              value={form.email}
+              onChange={onUpdateField}
+              onBlur={onBlurField}
+            />
+            {errors.email.dirty && errors.email.error ? (
+              <p className={styles.formFieldErrorMessage}>
+                {errors.email.message}
+              </p>
+            ) : null}
+            <div className="input-feedback"></div>
+            <label htmlFor="email"></label>
+            <input
+              className={clsx(
+                styles.formField,
+                errors.password.dirty &&
+                  errors.password.error &&
+                  styles.formFieldError
+              )}
+              type="password"
+              name="password"
+              id="passwordLogin"
+              placeholder="Password"
+              value={form.password}
+              onChange={onUpdateField}
+              onBlur={onBlurField}
+            />
+            {errors.confirmPassword.dirty && errors.confirmPassword.error ? (
+              <p className={styles.formFieldErrorMessage}>
+                {errors.confirmPassword.message}
+              </p>
+            ) : null}
+            <label className={styles.formLabel}></label>
+            <input
+              className={clsx(
+                styles.formField,
+                errors.confirmPassword.dirty &&
+                  errors.confirmPassword.error &&
+                  styles.formFieldError
+              )}
+              type="password"
+              aria-label="Confirm password field"
+              name="confirmPassword"
+              value={form.confirmPassword}
+              onChange={onUpdateField}
+              onBlur={onBlurField}
+            />
+            {errors.confirmPassword.dirty && errors.confirmPassword.error ? (
+              <p className={styles.formFieldErrorMessage}>
+                {errors.confirmPassword.message}
+              </p>
+            ) : null}
+            <i>Forgot your password?</i>
+            <button type="submit" className={styles.submitLogin}>
+              Sign In
+            </button>
+            <a href="#">Don’t have an Account?Create account</a>
+          </form>
         </div>
-      );
-  //   }}
-  //  </Formik>;    
+      </div>
+    </div>
+  );
 };
 
-export default MyAccount;
+export default LoginForm;

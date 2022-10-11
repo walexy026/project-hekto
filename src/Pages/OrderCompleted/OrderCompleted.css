@@ -24,13 +24,14 @@
   padding-bottom: 2rem;
   color: #8d92a7;
 }
-.orderText button {
+.orderText a {
   background-color: #ff1788;
   color: #ffffff;
   border: #ff1788;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
   font-size: 14px;
+  text-decoration: none;
 }
 .orderText button:hover {
   color: #ff1788;

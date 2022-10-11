@@ -19,57 +19,62 @@
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
-.checkbox{
+.checkbox {
   display: block;
   position: relative;
   cursor: pointer;
   font-size: 15px;
-  padding-left: 5px;
-  margin-bottom: 10px;
+  padding-left: 3px;
+  margin: 10px;
+  /* margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; */
 }
-.checkbox input{
+.checkbox input {
   visibility: hidden;
   cursor: pointer;
 }
-.mark{
+.mark {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 40%;
   background-color: lightgray;
 }
-.checkbox:hover input ~.mark{
+.checkbox:hover input ~ .mark {
   background-color: gray;
 }
-.checkbox input:checked ~.mark{
+.checkbox input:checked ~ .mark {
   background-color: #19d16f;
 }
-.mark:after{
-  content: '';
+.mark::after {
+  content: "";
   position: absolute;
   display: none;
 }
-.checkbox input:checked~ .mark:after{
+.checkbox input:checked ~ .mark::after {
   display: block;
 }
-.checkbox .mark:after{
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border:solid white;
+.checkbox .mark::after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-.sbp, .stp{
+.sbp,
+.stp {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-items: center;
   padding: 0.5rem 1rem;
 }
-.checkout{
+.checkout {
   padding-bottom: 1rem;
 }
 /* .stp{
@@ -91,7 +96,7 @@ justify-content: space-between;
   padding: 0.5rem 3rem;
   margin-right: 2rem;
 }
-.subtotal button:hover{
+.subtotal button:hover {
   color: #19d16f;
   background-color: #8a91ab;
 }
@@ -102,33 +107,32 @@ justify-content: space-between;
 }
 .shipping button {
   background-color: #fb2e86;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   padding: 0.5rem;
   width: 50%;
   cursor: pointer;
   margin-left: 1rem;
 }
-.shipping button:hover{
+.shipping button:hover {
   color: #fb2e86;
   background-color: #8a91ab;
 }
-.shipping form{
-    display: flex;
-    flex-direction: column;
-    background-color: #F4F4FC;
+.shipping form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4fc;
 }
-#shippingCountry{
-    border-bottom:2px solid #C7CEE4;
-    padding: 1rem;
+#shippingCountry {
+  border-bottom: 2px solid #c7cee4;
+  padding: 1rem;
 }
-#shippingState{
-    border-bottom:2px solid #C7CEE4;
-    padding: 1rem;
-
+#shippingState {
+  border-bottom: 2px solid #c7cee4;
+  padding: 1rem;
 }
-#PostalCode{
-    border-bottom:2px solid #C7CEE4;
-    padding: 1rem;
-    margin-bottom: 1rem;
+#PostalCode {
+  border-bottom: 2px solid #c7cee4;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }

@@ -37,7 +37,7 @@ const Footer = () => {
         <a href="">
           <li className="firstLink">Customer Care</li>
         </a>
-        <a href="">
+        <a href="http://localhost:3000/MyAccount">
           <li>My Account</li>
         </a>
         <a href="">
