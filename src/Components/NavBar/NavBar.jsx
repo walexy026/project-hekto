@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "./NavBar.css";
-import searchIcon from "../../Assets/searchIcon.svg";
 import { Link } from "react-router-dom";
 // import { navLink, NavMenu, Bars, } from "./NavBarElement";
 // import {FaBars} from 'react-icons/fa'

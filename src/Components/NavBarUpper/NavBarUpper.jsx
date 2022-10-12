@@ -24,7 +24,7 @@ const NavBarUpper = () => {
           <p>English</p>
           <p>USD</p>
           <div className="optionFlex log">
-            <a href="http://localhost:3000/MyAccount">Login</a>
+            <a href="http://project-hekto.vercel.app/MyAccount">Login</a>
             <img src={userLogin} alt="userlogin" />
           </div>
         </div>
@@ -33,7 +33,7 @@ const NavBarUpper = () => {
             <p>Wishlist</p>
             <AddtoCart />
           </div>
-          <a href="http://localhost:3000/shoppingcart">
+          <a href="http://project-hekto.vercel.app/shoppingcart">
             <img src={cart} alt="cart" />
           </a>
           </div>
