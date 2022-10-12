@@ -23,7 +23,7 @@ const NavBar = () => {
           }
         </button>
         {/* <ul className='navLink' > */}
-          <ul className={toggle ? 'navLink' : 'navShow'}> 
+          <ol className={toggle ? 'navLink' : 'navShow'}> 
           <li className='active'>Home</li>
           <li className='navLinks'>Pages</li>
           <li className='navLinks'>
@@ -42,7 +42,7 @@ const NavBar = () => {
           <li className='navLinks'> <Link className='navLinks' to="./myaccount">
           Contact
             </Link></li>
-        </ul>
+        </ol>
         <form action="" className='formNav'>
           <input type="search" className='inputsearch' name="" id="" />
           <button type="submit" className='btn'></button>

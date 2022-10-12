@@ -13,7 +13,7 @@ const Footer = () => {
         <strong>Contact Info</strong>
         <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
       </div>
-      <ul>
+      <ul className="uli">
         <a href="">
           <li className="firstLink">Categories</li>
         </a>
@@ -33,11 +33,11 @@ const Footer = () => {
           <li>Waterproof Headphones</li>
         </a>
       </ul>
-      <ul>
+      <ul className="uli">
         <a href="">
           <li className="firstLink">Customer Care</li>
         </a>
-        <a href="http://localhost:3000/MyAccount">
+        <a >
           <li>My Account</li>
         </a>
         <a href="">
@@ -53,7 +53,7 @@ const Footer = () => {
           <li>Order Tracking</li>
         </a>
       </ul>
-      <ul>
+      <ul className="uli">
         <a href="">
           <li className="firstThird">Pages</li>
         </a>

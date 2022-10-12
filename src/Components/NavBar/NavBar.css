@@ -24,12 +24,12 @@ html, body{
     color:#FB2E86;
     list-style-type: none;
   cursor: pointer;
+  padding-bottom: 0.5rem;
 }
-ul {
+ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 5rem 0 5rem; */
   width: 45%;
   cursor: pointer;
 }
@@ -37,7 +37,8 @@ ul {
 .navLinks {
   list-style-type: none;
   color: #0d0e43;
-  /* padding-left: 0.5rem; */
+text-decoration: none;
+  padding-bottom: 0.5rem;
 }
 .active:hover::before{
     content: " ";
@@ -112,6 +113,9 @@ ul {
     cursor: pointer;
     margin-right: -4rem;
   }
+  .active{
+    padding-bottom: 1rem;
+  }
   .navLink {
     display: block;
     position: absolute;
@@ -125,6 +129,8 @@ ul {
     align-items: center;
     justify-content: space-between;
     background-color: #e5e5e5;
+  padding-bottom: 1rem;
+
   }
   .logo {
     margin-left: -4rem;

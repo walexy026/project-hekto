@@ -8,14 +8,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 3rem; */
   min-height: 18rem;
   padding-bottom: 3rem;
 }
-ul a {
+.uli a {
   text-decoration: none;
 }
-ul a li {
+.uli a li {
   list-style: none;
   text-align: justify;
   font-size: 14px;
@@ -59,7 +58,6 @@ strong {
  #footerinput{
 padding: 0.3rem;
 border: #8A8FB9;
-/* display: none; */
 } 
 placeholder{
     color: #8A8FB9;
@@ -82,7 +80,7 @@ input[type='button']{
 flex-direction: column;
 gap: 1rem;
 }
-ul a li{
+.uli a li{
         text-align: center;
     }
     .firstThird{
