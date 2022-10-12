@@ -39,7 +39,9 @@ const NavBar = () => {
               Shop
             </Link>
           </li>
-          <li className='navLinks'>Contact</li>
+          <li className='navLinks'> <Link className='navLinks' to="./myaccount">
+          Contact
+            </Link></li>
         </ul>
         <form action="" className='formNav'>
           <input type="search" className='inputsearch' name="" id="" />

@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBarUpper.css";
+import { Link } from "react-router-dom";
 import mailBox from "../../Assets/mailBox.svg";
 import telephone from "../../Assets/telephone.svg";
 import userLogin from "../../Assets/userLogin.svg";
@@ -24,7 +25,9 @@ const NavBarUpper = () => {
           <p>English</p>
           <p>USD</p>
           <div className="optionFlex log">
-            <a href="http://project-hekto.vercel.app/MyAccount">Login</a>
+            <a ><Link  to="./myaccount">
+            Login
+            </Link></a>
             <img src={userLogin} alt="userlogin" />
           </div>
         </div>
@@ -33,8 +36,9 @@ const NavBarUpper = () => {
             <p>Wishlist</p>
             <AddtoCart />
           </div>
-          <a href="http://project-hekto.vercel.app/shoppingcart">
-            <img src={cart} alt="cart" />
+          <a ><Link  to="./ordercompleted">
+          <img src={cart} alt="cart" />
+            </Link>
           </a>
           </div>
       </div>
