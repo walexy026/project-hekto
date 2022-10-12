@@ -91,3 +91,10 @@ transform: translateX(-400px);
   cursor: pointer;
   padding: 5px;
 }
+
+
+@media only screen and (max-width:768px){
+  .product{
+    flex-direction: column;
+  } 
+}
