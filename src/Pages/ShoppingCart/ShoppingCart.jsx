@@ -107,10 +107,10 @@ const ShoppingCart = () => {
               ))}
           <span className="btncartUpdate">
             <button id="btncart" type="submit">
-              Update Curt
+              Update Cart
             </button>
             <button id="btncart" type="submit">
-              Clear Curt
+              Clear Cart
             </button>
           </span>
         </div>

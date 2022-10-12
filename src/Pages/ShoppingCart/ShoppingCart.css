@@ -35,4 +35,14 @@
     .shopCart{
         flex-direction: column;
     }
+    .btncartUpdate{
+        gap: 5rem;
+    }
+    #btncart{
+        border-radius: 2px;
+        border: #FB2E86;
+        /* padding: 0.5rem 1rem; */
+        cursor: pointer;
+        font-size: 14px;
+    }
 }

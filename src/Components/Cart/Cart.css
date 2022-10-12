@@ -41,12 +41,8 @@ transform: translateX(-400px);
     position: absolute;
     color: #1d3178;
     transform: translateX(110px);
-
 }
-/* .heading h3 {
-  color: #1d3178;
-  padding-left: 4rem;
-} */
+
 .cart {
   display: flex;
   justify-content: center;
@@ -85,8 +81,6 @@ transform: translateX(-400px);
   font-size: 14px;
 }
 .quantity button {
-  /* background-color: #F0EFF2; */
-  /* border: #F0EFF2; */
   color: #bebfc2;
   cursor: pointer;
   padding: 5px;
@@ -96,5 +90,29 @@ transform: translateX(-400px);
 @media only screen and (max-width:768px){
   .product{
     flex-direction: column;
+
   } 
+  .cartPricing {
+    max-width: 300px;
+    padding: 1rem;
+  }
+  .cart{
+gap: 1rem;
+  }
+  #h3quantity{
+  font-size: 18px;
+    transform: translateX(42px);
+}
+#h3product{
+  font-size: 18px;
+  transform: translateX(-100px); 
+  }
+  #h3price{
+  font-size: 18px;
+    transform: translateX(-25px);
+
+}
+#h3total{
+  font-size: 18px;
+}
 }
