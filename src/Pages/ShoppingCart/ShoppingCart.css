@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25rem;
+    gap: 20rem;
     margin: 2rem;
 }
 #btncart{
@@ -29,4 +29,10 @@
 .shopCart{
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width:768px) {
+    .shopCart{
+        flex-direction: column;
+    }
 }

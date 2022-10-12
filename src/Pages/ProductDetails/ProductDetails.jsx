@@ -4,14 +4,14 @@ import bagUS from "../../Assets/bagUS.svg";
 import readingLamp from "../../Assets/readingLamp.svg";
 import fingerBag from "../../Assets/fingerBag.svg";
 import handBag from "../../Assets/handBag.svg";
-import star from "../../Assets/star.svg";
-import wishlistBlue from "../../Assets/wishlist2.svg";
 import instagram from "../../Assets/instagRaam.svg";
 import facebook from "../../Assets/faceBOOOK.svg";
 import twitter from "../../Assets/twiiiiter.svg";
 import Description from "../../Components/Description/Description";
 import RelatedProduct from "../../Components/RelatedProducts/RelatedProduct";
 import ProductTitle from "../../Components/ProductTitle/ProductTitle";
+import StarRating from "../../Components/StarRating/StarRating";
+import AddtoCart from "../../Components/AddtoCart/AddtoCart";
 const ProductDetails = () => {
   return (
     <Fragment>
@@ -29,13 +29,9 @@ const ProductDetails = () => {
         <div className="productText">
           <h3>Playwood arm chair</h3>
 
-          <span>
+          <span className="starDiv">
             <span>
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
+              <StarRating/>
             </span>
             <b id="b1">(22)</b>
           </span>
@@ -50,7 +46,7 @@ const ProductDetails = () => {
           </p>
           <span id="imgb3">
             <b id="b3">Add To cart</b>
-            <img src={wishlistBlue} alt="wishlistBlue" />
+            <AddtoCart/>
           </span>
           <p id="p3">Categories:</p>
           <p id="p4">Tags</p>

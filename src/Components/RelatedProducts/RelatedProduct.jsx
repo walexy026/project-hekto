@@ -6,6 +6,7 @@ import wolx from "../../Assets/wolxDummyFashion.svg";
 import topDigitalClock from "../../Assets/topDigitalClock.svg";
 import star from "../../Assets/star.svg";
 import starWhite from "../../Assets/starWhite.svg";
+import StarRating from "../StarRating/StarRating";
 
 const RelatedProduct = () => {
   return (
@@ -20,10 +21,7 @@ const RelatedProduct = () => {
           <span className="clothRating">
             <b>Mens Fashion Wear</b>
             <div>
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={starWhite} alt="" />
+              <StarRating/>
             </div>
           </span>
             <p>$43.00</p>
@@ -33,10 +31,7 @@ const RelatedProduct = () => {
           <span className="clothRating">
             <b>Women’s Fashion</b>
             <div>
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={starWhite} alt="" />
+            <StarRating/>
             </div>
           </span>
             <p>$67.00</p>
@@ -46,10 +41,7 @@ const RelatedProduct = () => {
           <span className="clothRating">
             <b>Wolx Dummy Fashion</b>
             <div>
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={starWhite} alt="" />
+            <StarRating/>
             </div>
           </span>
             <p>$67.00</p>
@@ -59,10 +51,7 @@ const RelatedProduct = () => {
           <span className="clothRating">
             <b>Top Wall Digital Clock</b>
             <div>
-            <img src={star} alt="star" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={starWhite} alt="" />
+            <StarRating/>
             </div>
           </span>
             <p>$51.00</p>

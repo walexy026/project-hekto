@@ -93,7 +93,7 @@ justify-content: space-between;
   background-color: #19d16f;
   border: none;
   cursor: pointer;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   margin-right: 2rem;
 }
 .subtotal button:hover {
@@ -110,9 +110,9 @@ justify-content: space-between;
   color: #ffffff;
   border: none;
   padding: 0.5rem;
-  width: 50%;
+  width: 70%;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 0.3rem;
 }
 .shipping button:hover {
   color: #fb2e86;

@@ -2,9 +2,9 @@ import React from "react";
 import "./NavBarUpper.css";
 import mailBox from "../../Assets/mailBox.svg";
 import telephone from "../../Assets/telephone.svg";
-import wishlist from "../../Assets/wishlist.svg";
 import userLogin from "../../Assets/userLogin.svg";
 import cart from "../../Assets/cart.svg";
+import AddtoCart from "../AddtoCart/AddtoCart";
 
 const NavBarUpper = () => {
   return (
@@ -28,7 +28,7 @@ const NavBarUpper = () => {
         </div>
         <div className="optionFlex">
           <p>Wishlist</p>
-          <img src={wishlist} alt="wishlist" />
+          <AddtoCart/>
         </div>
         <img src={cart} alt="cart" />
       </div>

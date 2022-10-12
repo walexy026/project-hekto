@@ -12,7 +12,7 @@
     margin-top: 2rem;
 }
 .cartPricing {
-  width: 600px;
+  max-width: 600px;
 }
 .heading {
   display: flex;

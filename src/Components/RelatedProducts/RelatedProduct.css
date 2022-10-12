@@ -20,7 +20,8 @@ padding-bottom: 2rem;
 }
 .clothRating{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: center;
 }
 .clothRating b{
     font-size: 12px;
