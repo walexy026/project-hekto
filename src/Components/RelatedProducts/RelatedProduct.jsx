@@ -4,10 +4,7 @@ import MensFashion from "../../Assets/mensFashionWear.svg";
 import WomenFashion from "../../Assets/womenFashion.svg";
 import wolx from "../../Assets/wolxDummyFashion.svg";
 import topDigitalClock from "../../Assets/topDigitalClock.svg";
-import star from "../../Assets/star.svg";
-import starWhite from "../../Assets/starWhite.svg";
 import StarRating from "../StarRating/StarRating";
-import StateSelector from "../CountrySelector/StateSelector";
 
 
 const RelatedProduct = () => {
@@ -16,7 +13,7 @@ const RelatedProduct = () => {
       <div className="relatedProduct">
         {" "}
         <h3>Related Products</h3>{" "}
-<StateSelector/>
+
       </div>
       <div className="productRating">
         <div className="productPrice">
