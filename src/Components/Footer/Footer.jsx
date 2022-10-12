@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footerLogo">
         <a href="">Hekto</a>
         <form action="">
-          <input type="text" name="" id="" placeholder="Enter Email Address"/>
+          <input type="text" name="" id="footerinput" placeholder="Enter Email Address"/>
           <input type="button" value="Sign Up" />
         </form>
         <strong>Contact Info</strong>

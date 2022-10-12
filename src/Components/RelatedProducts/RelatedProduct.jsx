@@ -7,6 +7,8 @@ import topDigitalClock from "../../Assets/topDigitalClock.svg";
 import star from "../../Assets/star.svg";
 import starWhite from "../../Assets/starWhite.svg";
 import StarRating from "../StarRating/StarRating";
+import StateSelector from "../CountrySelector/StateSelector";
+
 
 const RelatedProduct = () => {
   return (
@@ -14,6 +16,7 @@ const RelatedProduct = () => {
       <div className="relatedProduct">
         {" "}
         <h3>Related Products</h3>{" "}
+<StateSelector/>
       </div>
       <div className="productRating">
         <div className="productPrice">

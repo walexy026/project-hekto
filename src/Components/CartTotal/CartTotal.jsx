@@ -1,5 +1,6 @@
 import "./CartTotal.css";
 import React from "react";
+import CountrySelector from "../CountrySelector/CountrySelector";
 
 const CartTotal = () => {
   return (
@@ -27,7 +28,8 @@ const CartTotal = () => {
         <div className="shipping">
           <h3>Calculate Shopping</h3>
           <form action="">
-            <input type="text" id="shippingCountry" placeholder="Bangladesh" />
+            <CountrySelector/>
+            {/* <input type="text" id="shippingCountry" placeholder="Bangladesh" /> */}
             <input
               type="text"
               id="shippingState"

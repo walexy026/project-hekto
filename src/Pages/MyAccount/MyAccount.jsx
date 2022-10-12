@@ -95,6 +95,7 @@ const LoginForm = (props) => {
                   styles.formFieldError
               )}
               type="password"
+              placeholder="Confirm password field"
               aria-label="Confirm password field"
               name="confirmPassword"
               value={form.confirmPassword}

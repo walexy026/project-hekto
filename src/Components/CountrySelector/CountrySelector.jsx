@@ -1,36 +1,65 @@
-import React, { Component } from 'react';
+// import React, {useState, useEffect} from 'react'
 
-// note that you can also export the source data via CountryRegionData. It's in a deliberately concise format to 
-// keep file size down
-import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
+// const CountrySelector = () => {
+// const [country, setCountry] = useState([])
+// const [countryid, setCountryid] = useState('')
+
+// useEffect =(()=>{
+//     const getCountry = async ()=>{
+// const rescountry = await fetch()
+// const rescon = await rescountry.json()
+// setCountry(await rescon)
+//     }
+//     getCountry()
+// },[])
+// const handleCountry =(e =>{
+//     const getcountryid = e.target.value
+// setCountryid(getcountryid)
+// })
+//   return (
+//     <div>
+//         <form action="">
+//         <label htmlFor=""></label>
+// <select name="" id="" onChange={()=>handleCountry()}>
+//     <option value="">hdhhd</option>
+//     {
+//         country.map((getcon, index)=>(
+//             <option key={index} value={getcon.id}>{getcon.countryid}</option>
+
+//         ))
+//     }
+// </select>
+//         <label htmlFor=""></label>
+// <select name="" id="">
+//     <option value="">hdhhd</option>
+//     <option value="">hdhhd</option>
+// </select>
+//         </form>
+
+//     </div>
+//   )
+// }
+
+// export default CountrySelector
+
+// zm2cmen5DXL8QCn9M16sDyCN5VzeC4Ii
 
 
-class Example extends Component {
-  constructor (props) {
-    super(props);
-    this.state = { country: '', region: '' };
+
+import React, { useState, useMemo } from 'react'
+import Select from 'react-select'
+import countryList from 'react-select-country-list'
+
+function CountrySelector() {
+  const [value, setValue] = useState('')
+  const options = useMemo(() => countryList().getData(), [])
+
+  const changeHandler = value => {
+    setValue(value)
   }
 
-  selectCountry (val) {
-    this.setState({ country: val });
-  }
-
-  selectRegion (val) {
-    this.setState({ region: val });
-  }
-
-  render () {
-    const { country, region } = this.state;
-    return (
-      <div>
-        <CountryDropdown
-          value={country}
-          onChange={(val) => this.selectCountry(val)} />
-        <RegionDropdown
-          country={country}
-          value={region}
-          onChange={(val) => this.selectRegion(val)} />
-      </div>
-    );
-  }
+  return <Select options={options} value={value} onChange={changeHandler} />
 }
+
+
+export default CountrySelector

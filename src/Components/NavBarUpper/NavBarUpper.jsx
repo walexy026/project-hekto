@@ -8,31 +8,37 @@ import AddtoCart from "../AddtoCart/AddtoCart";
 
 const NavBarUpper = () => {
   return (
-    <nav>
+    <div className="upper">
       <div className="contactAddress">
-        <div className="optionFlex">
+        <div className="optionFlex1">
           <img src={mailBox} className="mail" alt="mailbox" />
           <p>mhhasanul@gmail.com</p>
         </div>
-        <div className="optionFlex">
+        <div className="optionFlex1">
           <img src={telephone} className="telephone" alt="mailbox" />
           <p>(12345)67890</p>
         </div>
       </div>
       <div className="options">
-        <p>English</p>
-        <p>USD</p>
-        <div className="optionFlex">
-          <p>Login</p>
-          <img src={userLogin} alt="userlogin" />
+        <div className="optionFlex1">
+          <p>English</p>
+          <p>USD</p>
+          <div className="optionFlex log">
+            <a href="http://localhost:3000/MyAccount">Login</a>
+            <img src={userLogin} alt="userlogin" />
+          </div>
         </div>
-        <div className="optionFlex">
-          <p>Wishlist</p>
-          <AddtoCart/>
-        </div>
-        <img src={cart} alt="cart" />
+          <div className="optionFlex1">
+          <div className="optionFlex1">
+            <p>Wishlist</p>
+            <AddtoCart />
+          </div>
+          <a href="http://localhost:3000/shoppingcart">
+            <img src={cart} alt="cart" />
+          </a>
+          </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
