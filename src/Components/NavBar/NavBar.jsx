@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 // import { navLink, NavMenu, Bars, } from "./NavBarElement";
-// import {FaBars} from 'react-icons/fa'
+import {BiSearch} from 'react-icons/bi'
 import { useState } from "react";
 
 const NavBar = () => {
@@ -46,6 +46,10 @@ const NavBar = () => {
         <form action="" className='formNav'>
           <input type="search" className='inputsearch' name="" id="" />
           <button type="submit" className='btn'></button>
+          
+    <div id="searchh">
+          <BiSearch size='1.8rem' color='#fff'/>
+    </div>
           {/* <img src={searchIcon} className='search' alt="searchIcon" /> */}
         </form>
       </nav>

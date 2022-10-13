@@ -85,6 +85,7 @@ text-decoration: none;
   font-weight: 600;
 }
 .formNav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,6 +93,10 @@ text-decoration: none;
 .inputsearch {
   margin-left: auto;
   padding: 0.4rem;
+}
+#searchh{
+  position: absolute;
+  right: 0;
 }
 .btn {
   padding: 1rem;
