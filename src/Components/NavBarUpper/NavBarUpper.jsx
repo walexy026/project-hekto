@@ -6,6 +6,7 @@ import telephone from "../../Assets/telephone.svg";
 import userLogin from "../../Assets/userLogin.svg";
 import cart from "../../Assets/cart.svg";
 import AddtoCart from "../AddtoCart/AddtoCart";
+import {BiCart} from 'react-icons/bi'
 
 const NavBarUpper = () => {
   return (
@@ -37,7 +38,8 @@ const NavBarUpper = () => {
             <AddtoCart />
           </div>
           <a ><Link  to="./ordercompleted">
-          <img src={cart} alt="cart" />
+          {/* <img src={cart} alt="cart" /> */}
+          <BiCart size='1.5rem' color="#fff"/>
             </Link>
           </a>
           </div>
