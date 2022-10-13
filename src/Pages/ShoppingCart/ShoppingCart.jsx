@@ -10,6 +10,10 @@ import CartTotal from "../../Components/CartTotal/CartTotal";
 import ProductTitle from "../../Components/ProductTitle/ProductTitle";
 
 const ShoppingCart = () => {
+const addCart = ( g) =>{
+  
+}
+
   const cartData = [
     {
       id: 1,
@@ -106,7 +110,8 @@ const ShoppingCart = () => {
               />
               ))}
           <span className="btncartUpdate">
-            <button id="btncart" type="submit">
+            <button id="btncart" type="submit" onClick={()=>addCart}>
+              
               Update Cart
             </button>
             <button id="btncart" type="submit">

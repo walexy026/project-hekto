@@ -1,9 +1,12 @@
 import "./Cart.css";
 
 import React from "react";
+import {useCart} from 'react-use-cart'
 // import CartTotal from "../CartTotal/CartTotal";
 
 const Cart = (props) => {
+  // let {img, price, quantity } = props.cart
+  const {addItem} = useCart();
   return (
     <div className="cartWrapper">
       <div className="cartPricing">

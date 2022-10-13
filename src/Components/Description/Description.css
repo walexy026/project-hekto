@@ -8,7 +8,7 @@
 
 .desNav{
     background-color: #F9F8FE;
-    margin-left: -7rem;
+    /* margin-left: -7rem; */
 }
 .description{
     /* text-align: start; */
@@ -20,7 +20,17 @@
     padding-bottom: 4rem;
 }
 .desLink{
+    /* display: none; */
     text-decoration: none;
     color: #151875;
     font-weight: 600;
+    padding-right: 2rem;
+}
+@media only screen and (max-width:768px){
+    .desLink{
+        display: none;
+    }
+    .line{
+        display: block;
+    }
 }
