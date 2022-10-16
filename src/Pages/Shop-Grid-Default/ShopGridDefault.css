@@ -1,0 +1,30 @@
+.shopGridTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #151875;
+}
+.gridTitle h4{
+    color: #151875;
+    padding-bottom: 0.2rem;
+}
+.gridTitle b{
+    color: #8A8FB9;
+    font-size: 12px;
+}
+.gridTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#page-select{
+    /* display: none; */
+    width: 55px;
+    margin-right: 1rem;
+}
+#sort{
+    margin-left: 1rem;
+}
+#view{
+    margin-right: 1rem;
+}
