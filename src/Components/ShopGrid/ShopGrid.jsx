@@ -12,7 +12,7 @@ const ShopGrid = (props) => {
           <span className="pink">{props.pink}</span>
           <span className="blue">{props.blue}</span>
         </div>
-        <div>
+        <div className="priceDiscount">
           <b className="gridPrice">{props.price}</b>
           <s className="gridDiscount">{props.discount}</s>
         </div>

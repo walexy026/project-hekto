@@ -1,7 +1,7 @@
 .shopgrid{
 display: flex;
 flex-direction: column;
-width: 200px;
+width: 270px;
 height: 280px;
 flex-wrap: wrap;
 }
@@ -36,12 +36,17 @@ cursor: pointer;
 
 }
 .picsTitle{
+    padding-top: 8px;
     color: #151875;
     font-weight: 700;
 }
 .gridPrice{
+    padding-top: 8px;
     color:#151875;
     font-weight: 600;
+}
+.priceDiscount{
+    padding-top: 8px;
 }
 .gridDiscount{
     color: #FB2E86;
@@ -56,6 +61,7 @@ cursor: pointer;
     font-size: 10px;
 }
 .ypb{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

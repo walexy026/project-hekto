@@ -132,17 +132,19 @@ const ShopGridDefault = () => {
           </form>
         </span>
       </div>
+      <div className="gridclass">
       {immg.map((grid) => (
         <ShopGrid
-          pics={grid.pics}
-          picsTitle={grid.picsTitle}
-          yellow={grid.yellow}
-          pink={grid.pink}
-          blue={grid.blue}
-          price={grid.price}
-          discount={grid.discount}
+        pics={grid.pics}
+        picsTitle={grid.picsTitle}
+        yellow={grid.yellow}
+        pink={grid.pink}
+        blue={grid.blue}
+        price={grid.price}
+        discount={grid.discount}
         />
-      ))}
+        ))}
+        </div>
     </div>
   );
 };

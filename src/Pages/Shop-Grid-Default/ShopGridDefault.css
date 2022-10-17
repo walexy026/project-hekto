@@ -4,6 +4,7 @@
     align-items: center;
     color: #151875;
 }
+
 .gridTitle h4{
     font-size: 15px;
     color: #151875;
@@ -52,10 +53,22 @@
     font-size: 12px;
     color: #3F509E;
 }
+.gridclass{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding: 2rem;
+margin: 5rem;
+
+}
 
 @media only screen and (max-width:768px){
     .shopGridTitle{
         flex-direction: column;
+    }
+    .gridclass{
+        margin: 0rem;
     }
 }
 @media only screen and (max-width:880px){
