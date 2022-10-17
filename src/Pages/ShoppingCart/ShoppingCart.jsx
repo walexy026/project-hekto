@@ -10,9 +10,7 @@ import CartTotal from "../../Components/CartTotal/CartTotal";
 import ProductTitle from "../../Components/ProductTitle/ProductTitle";
 
 const ShoppingCart = () => {
-const addCart = ( g) =>{
-  
-}
+  const addCart = (g) => {};
 
   const cartData = [
     {
@@ -84,46 +82,45 @@ const addCart = ( g) =>{
 
   return (
     <div>
-<ProductTitle title = 'ShoppingCart' ProductDetails = 'ShoppingCart'/>
-    <div className="cartDiv">
-      <div className="heading">
-        <h3 id="h3product">Product</h3>
-        <h3 id="h3price">Price</h3>
-        <h3 id="h3quantity">Quantity</h3>
-        <h3 id="h3total">Total</h3>
-      </div>
-      <div className="shopCart">
-        <div className="cartMap">
-          {cartData.map((items) => (
-            <Cart
-            // heading={items.heading}
-            img={items.logo}
-              name={items.name}
-              color={items.color}
-              size={items.size}
-              price={items.price}
-              decrease={items.decrease}
-              count={items.count}
-              increase={items.increase}
-              total={items.total}
-              key={items.id}
+      <ProductTitle title="ShoppingCart" ProductDetails="ShoppingCart" />
+      <div className="cartDiv">
+        <div className="heading">
+          <h3 id="h3product">Product</h3>
+          <h3 id="h3price">Price</h3>
+          <h3 id="h3quantity">Quantity</h3>
+          <h3 id="h3total">Total</h3>
+        </div>
+        <div className="shopCart">
+          <div className="cartMap">
+            {cartData.map((items) => (
+              <Cart
+                // heading={items.heading}
+                img={items.logo}
+                name={items.name}
+                color={items.color}
+                size={items.size}
+                price={items.price}
+                decrease={items.decrease}
+                count={items.count}
+                increase={items.increase}
+                total={items.total}
+                key={items.id}
               />
-              ))}
-          <span className="btncartUpdate">
-            <button id="btncart" type="submit" onClick={()=>addCart}>
-              
-              Update Cart
-            </button>
-            <button id="btncart" type="submit">
-              Clear Cart
-            </button>
-          </span>
-        </div>
-        <div>
-          <CartTotal />
+            ))}
+            <span className="btncartUpdate">
+              <button id="btncart" type="submit" onClick={() => addCart}>
+                Update Cart
+              </button>
+              <button id="btncart" type="submit">
+                Clear Cart
+              </button>
+            </span>
+          </div>
+          <div>
+            <CartTotal />
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

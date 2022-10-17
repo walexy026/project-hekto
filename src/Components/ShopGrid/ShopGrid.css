@@ -1,0 +1,25 @@
+.yellow{
+    background-color: #DE9034;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: #DE9034;
+    font-size: 10px;
+}
+.pink{
+    background-color: #EC42A2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: #EC42A2;
+    font-size: 10px;
+
+}
+.blue{
+    background-color: #8568FF;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color:#8568FF;
+    font-size: 10px;
+}
