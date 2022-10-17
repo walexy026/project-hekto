@@ -6,11 +6,54 @@ import cantilever1 from "../../Assets/cantilever--1.svg";
 import cantilever2 from "../../Assets/cantilever--2.svg";
 import cantilever3 from "../../Assets/cantilever--3.svg";
 import cantilever4 from "../../Assets/cantilever--4.svg";
+import HomeMap from "./HomeMap";
 
 const Home = () => {
+  const FeaturedProduct = [
+    {
+      id: 1,
+      cantilever: <img src={cantilever1} alt="" />,
+      cantTitle: "Cantilever chair",
+      recyellow: ".",
+      recpink: ".",
+      recblue: ".",
+      code: "Code - Y523201",
+      price: "$42.00",
+    },
+    {
+      id: 2,
+      cantilever: <img src={cantilever2} alt="" />,
+      cantTitle: "Cantilever chair",
+      recyellow: ". ",
+      recpink: ".",
+      recblue: ".",
+      code: "Code - Y523201",
+      price: "$42.00",
+    },
+    {
+      id: 3,
+      cantilever: <img src={cantilever3} alt=""/>,
+      cantTitle: "Cantilever chair",
+      recyellow: " ",
+      recpink: " ",
+      recblue: "",
+      code: "Code - Y523201",
+      price: "$42.00",
+    },
+    {
+      id: 4,
+      cantilever: <img src={cantilever4} alt=""/>,
+      cantTitle: "Cantilever chair",
+      recyellow: " ",
+      recpink: "",
+      recblue: "",
+      code: "Code - Y523201",
+      price: "$42.00",
+    },
+  ];
+
   return (
     <div>
-      Home
       <div className="heroSection">
         <img src={jk} alt="" />
         <div>
@@ -28,6 +71,21 @@ const Home = () => {
         <div></div>
       </div>
       <div>
+      <h2>Featured Products</h2>
+        <div className="homediv">
+          {FeaturedProduct.map((cantil) => (
+            <HomeMap
+              cantilever={cantil.cantilever}
+              cantTitle={cantil.cantTitle}
+              recyellow={cantil.recyellow}
+              recpink={cantil.recpink}
+              recblue={cantil.recblue}
+              code={cantil.code}
+              price={cantil.price}
+            />
+          ))}
+        </div>
+        {/*         
         <h2>Featured Products</h2>
         <div>
           <div>
@@ -73,8 +131,8 @@ const Home = () => {
             </div>
             <b>Code - Y523201</b>
             <b>$42.00</b>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

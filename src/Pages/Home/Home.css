@@ -1,22 +1,68 @@
-.heroSection{
-    background-color: #F2F0FF;
-    /* height: 500px; */
-    display: flex;
-    align-items: center;
+.heroSection {
+  background-color: #f2f0ff;
+  display: flex;
+  align-items: center;
+}
+.cantilever {
+  background-color: #f6f7fb;
+  cursor: pointer;
+}
+.cantilever:hover {
+  background-color: #f7f7f7;
+}
+.canP {
+  color: #fb2e86;
+  font-size: 14px;
+  font-weight: 700;
+}
+.canSub {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.canSub:hover {
+  background-color: #2f1ac4;
+  color: #ffffff;
+}
+.ryrprb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.recyellow {
+  color: #05e6b7;
+  font-size: 5px;
+  height: 5px;
+  width: 15px;
+  background-color: #05e6b7;
+}
+.recpink {
+  color: #f701a8;
+  font-size: 5px;
+  height: 5px;
+  width: 15px;
+  background-color: #f701a8;
+}
+.recblue {
+  color: #00009d;
+  font-size: 5px;
+  height: 5px;
+  width: 15px;
+  background-color: #00009d;
 }
 
-.recyellow{
-    height: 10px;
-    width: 10px;
-    background-color: #05E6B7;
+.homeMap {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  height: 230px;
+  width: 200px;
+  margin: 2rem;
 }
-.recpink{
-    height: 10px;
-    width: 10px;
-    background-color: #F701A8;
-}
-.recblue{
-    height: 10px;
-    width: 10px;
-    background-color: #00009D;
+.homediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }

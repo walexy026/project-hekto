@@ -21,7 +21,7 @@ const ShopGridDefault = () => {
       id: 1,
       pics: <img src={shop1} alt="" />,
       picsTitle: "Vel elit euismod",
-      yellow: " ",
+      yellow: "",
       pink: "",
       blue: "",
       price: "$26.00 ",
