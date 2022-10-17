@@ -60,9 +60,16 @@
   width: 200px;
   margin: 2rem;
 }
+.homeH2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #1A0B5B;
+    font-size: 28px;
+}
 .homediv{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
