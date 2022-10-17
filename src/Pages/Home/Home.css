@@ -4,3 +4,19 @@
     display: flex;
     align-items: center;
 }
+
+.recyellow{
+    height: 10px;
+    width: 10px;
+    background-color: #05E6B7;
+}
+.recpink{
+    height: 10px;
+    width: 10px;
+    background-color: #F701A8;
+}
+.recblue{
+    height: 10px;
+    width: 10px;
+    background-color: #00009D;
+}

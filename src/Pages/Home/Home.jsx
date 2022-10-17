@@ -2,6 +2,10 @@ import React from "react";
 import "./Home.css";
 import jj from "../../Assets/sofa-promotional-header.svg";
 import jk from "../../Assets/heroHang.svg";
+import cantilever1 from "../../Assets/cantilever--1.svg";
+import cantilever2 from "../../Assets/cantilever--2.svg";
+import cantilever3 from "../../Assets/cantilever--3.svg";
+import cantilever4 from "../../Assets/cantilever--4.svg";
 
 const Home = () => {
   return (
@@ -22,6 +26,55 @@ const Home = () => {
           <img src={jj} alt="" />
         </div>
         <div></div>
+      </div>
+      <div>
+        <h2>Featured Products</h2>
+        <div>
+          <div>
+            <img src={cantilever1} alt="" />
+            <p>Cantilever chair</p>
+            <div>
+              <span className="recyellow">.</span>
+              <span className="recpink">.</span>
+              <span className="recblue">.</span>
+            </div>
+            <b>Code - Y523201</b>
+            <b>$42.00</b>
+          </div>
+          <div>
+            <img src={cantilever2} alt="" />
+            <p>Cantilever chair</p>
+            <div>
+              <span className="recyellow">.</span>
+              <span className="recpink">.</span>
+              <span className="recblue">.</span>
+            </div>
+            <b>Code - Y523201</b>
+            <b>$42.00</b>
+          </div>
+          <div>
+            <img src={cantilever3} alt="" />
+            <p>Cantilever chair</p>
+            <div>
+              <span className="recyellow">.</span>
+              <span className="recpink">.</span>
+              <span className="recblue">.</span>
+            </div>
+            <b>Code - Y523201</b>
+            <b>$42.00</b>
+          </div>
+          <div>
+            <img src={cantilever4} alt="" />
+            <p>Cantilever chair</p>
+            <div>
+              <span className="recyellow">.</span>
+              <span className="recpink">.</span>
+              <span className="recblue">.</span>
+            </div>
+            <b>Code - Y523201</b>
+            <b>$42.00</b>
+          </div>
+        </div>
       </div>
     </div>
   );
