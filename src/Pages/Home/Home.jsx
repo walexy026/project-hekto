@@ -138,14 +138,25 @@ const Home = () => {
           ))}
         </div>
       </div>
-      {LatPro.map((Latest) => (
-        <LatestProduct
-          latestPics={Latest.latestPics}
-          latestTitle={Latest.latestTitle}
-          latestPrice={Latest.latestPrice}
-          LatestDiscount={Latest.LatestDiscount}
-        />
-      ))}
+      <div>
+        <h2 className="lph2">Latest Products</h2>
+        <div className="latestPick">
+          <p>Latest Products</p>
+          <p>Best Seller</p>
+          <p>Featured</p>
+          <p>Special Offer</p>
+        </div>
+        <div className="LatPro">
+          {LatPro.map((Latest) => (
+            <LatestProduct
+              latestPics={Latest.latestPics}
+              latestTitle={Latest.latestTitle}
+              latestPrice={Latest.latestPrice}
+              LatestDiscount={Latest.LatestDiscount}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

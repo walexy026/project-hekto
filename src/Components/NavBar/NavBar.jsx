@@ -25,17 +25,17 @@ const NavBar = () => {
         </button>
         {/* <ul className='navLink' > */}
         <ol className={toggle ? "navLink" : "navShow"}>
-          <li className="active">Home</li>
+          <li className="active">
+            <Link  className="active , navLinks" to="./home">Home</Link>{" "}
+          </li>
           <li className="navLinks">Pages</li>
           <li className="navLinks">
-            {" "}
             <Link className="navLinks" to="/">
               Products
             </Link>
           </li>
           <li className="navLinks">Blog </li>
           <li className="navLinks">
-            {" "}
             <Link className="navLinks" to="./shoppingcart">
               Shop
             </Link>
@@ -48,7 +48,15 @@ const NavBar = () => {
           </li>
         </ol>
         <form action="" className="formNav">
-          <input type="search" value={searchInput} onChange={(e)=>setSearchInput(e.target.value)} className="inputsearch" name="" placeholder="search" id="" />
+          <input
+            type="search"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+            className="inputsearch"
+            name=""
+            placeholder="search"
+            id=""
+          />
           <button type="submit" className="btn"></button>
 
           <div id="searchh">
@@ -61,4 +69,4 @@ const NavBar = () => {
   );
 };
 
- export default NavBar;
+export default NavBar;

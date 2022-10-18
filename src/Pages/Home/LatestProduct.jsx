@@ -9,10 +9,9 @@ const LatestProduct = ({
 }) => {
   return (
     <div>
-      LatestProduct
       <div className="latestProduct">
         <div className="latestPics">{latestPics}</div>
-        <div>
+        <div className="TpD">
           <span>
             <b className="latestTitle">{latestTitle}</b>
           </span>
