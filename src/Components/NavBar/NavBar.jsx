@@ -8,7 +8,6 @@ import { useState } from "react";
 const NavBar = () => {
   const [toggle, setToggle] = useState(true);
   const [searchInput, setSearchInput] = useState("");
-  // const handleClick = () => setToggle(!toggle);
   function handleClick() {
     return setToggle((preToggle) => !preToggle);
   }

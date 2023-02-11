@@ -11,6 +11,9 @@ html, body{
   cursor: pointer;
 }
 .navBarLower {
+  position: sticky;
+  /* top: 6vh; */
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,7 +21,7 @@ html, body{
   padding: 0 2rem;
   margin: auto;
   height: 4rem;
-  position: relative;
+  /* position: relative; */
 }
 .active{
     color:#FB2E86;
@@ -134,7 +137,7 @@ text-decoration: none;
     align-items: center;
     justify-content: space-between;
     background-color: #e5e5e5;
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 
   }
   .logo {

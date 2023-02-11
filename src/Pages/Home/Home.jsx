@@ -6,6 +6,10 @@ import cantilever1 from "../../Assets/cantilever--1.svg";
 import cantilever2 from "../../Assets/cantilever--2.svg";
 import cantilever3 from "../../Assets/cantilever--3.svg";
 import cantilever4 from "../../Assets/cantilever--4.svg";
+import cantilever5 from "../../Assets/cantilever--5.svg";
+import cantilever6 from "../../Assets/cantilever--6.svg";
+import cantilever7 from "../../Assets/cantilever--7.svg";
+import cantilever8 from "../../Assets/cantilever--8.svg";
 import HomeMap from "./HomeMap";
 import LatestProduct from "./LatestProduct";
 import handyCraft1 from "../../Assets/handy-craft--1.svg";
@@ -14,6 +18,15 @@ import handyCraft3 from "../../Assets/handy-craft--3.svg";
 import handyCraft4 from "../../Assets/handy-craft--4.svg";
 import handyCraft5 from "../../Assets/handy-craft--5.svg";
 import handyCraft6 from "../../Assets/handy-craft--6.svg";
+import freedelivery from "../../Assets/free-delivery.svg";
+import support from "../../Assets/24-hours-support.svg";
+import cashback from "../../Assets/cashback.svg";
+import premiumQuality from "../../Assets/premium-quality.svg";
+import clock from "../../Assets/clock-list.svg";
+import shelve from "../../Assets/shelve.svg";
+import executive1 from "../../Assets/executive-chair--1.svg";
+import executive2 from "../../Assets/executive-chair--2.svg";
+import executive3 from "../../Assets/executive-chair--3.svg";
 
 const Home = () => {
   const FeaturedProduct = [
@@ -26,6 +39,13 @@ const Home = () => {
       recblue: ".",
       code: "Code - Y523201",
       price: "$42.00",
+      shopImg: <img src={freedelivery} alt="" />,
+      shopexTitle: "24/7 Support",
+      shopexP:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+      trending: <img src={cantilever5} alt="" />,
+      trendingprice: "$26.00 ",
+      trendingDiscount: "$42.00",
     },
     {
       id: 2,
@@ -36,6 +56,13 @@ const Home = () => {
       recblue: ".",
       code: "Code - Y523201",
       price: "$42.00",
+      shopImg: <img src={cashback} alt="" />,
+      shopexTitle: "24/7 Support",
+      shopexP:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+      trending: <img src={cantilever6} alt="" />,
+      trendingprice: "$26.00 ",
+      trendingDiscount: "$42.00",
     },
     {
       id: 3,
@@ -46,6 +73,13 @@ const Home = () => {
       recblue: "",
       code: "Code - Y523201",
       price: "$42.00",
+      shopImg: <img src={premiumQuality} alt="" />,
+      shopexTitle: "24/7 Support",
+      shopexP:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+      trending: <img src={cantilever7} alt="" />,
+      trendingprice: "$26.00 ",
+      trendingDiscount: "$42.00",
     },
     {
       id: 4,
@@ -56,6 +90,13 @@ const Home = () => {
       recblue: "",
       code: "Code - Y523201",
       price: "$42.00",
+      shopImg: <img src={support} alt="" />,
+      shopexTitle: "24/7 Support",
+      shopexP:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+      trending: <img src={cantilever8} alt="" />,
+      trendingprice: "$26.00 ",
+      trendingDiscount: "$42.00",
     },
   ];
 
@@ -155,6 +196,62 @@ const Home = () => {
               LatestDiscount={Latest.LatestDiscount}
             />
           ))}
+        </div>
+      </div>
+      <div>
+        <h2 className="homeH2">What Shopex Offer!</h2>
+        <div className="homediv">
+          {FeaturedProduct.map((cantil) => (
+            <HomeMap
+              cantilever={cantil.shopImg}
+              cantTitle={cantil.shopexTitle}
+              code={cantil.shopexP}
+            />
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2 className="homeH2">Trending Products</h2>
+        <div className="homediv">
+          {FeaturedProduct.map((cantil) => (
+            <HomeMap
+              cantilever={cantil.trending}
+              cantTitle={cantil.cantTitle}
+              code={cantil.trendingDiscount}
+              price={cantil.trendingprice}
+              // trendingprice
+            />
+          ))}
+        </div>
+      </div>
+      <div className="productOff">
+        <div className="shopNow">
+          <h3>23% off in all products</h3>
+          <p>Shop Now</p>
+          <img src={clock} alt="" />
+        </div>
+        <div className="viewCollection">
+          <h3>23% off in all products</h3>
+          <p>View Collection</p>
+          <img src={shelve} alt="" />
+        </div>
+
+        <div>
+          <div>
+            <img src={executive1} alt="" />
+            <b>Executive Seat chair</b>
+            <s>$32.00</s>
+          </div>
+          <div>
+            <img src={executive2} alt="" />
+            <b>Executive Seat chair</b>
+            <s>$32.00</s>
+          </div>
+          <div>
+            <img src={executive3} alt="" />
+            <b>Executive Seat chair</b>
+            <s>$32.00</s>
+          </div>
         </div>
       </div>
     </div>

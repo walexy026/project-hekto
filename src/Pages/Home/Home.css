@@ -60,66 +60,63 @@
   background-color: #00009d;
 }
 
-.homeH2{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    color: #1A0B5B;
-    font-size: 28px;
+.homeH2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #1a0b5b;
+  font-size: 28px;
 }
-.homediv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+.homediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-
 
 /* LatestProduct */
 
-.latestProduct{
+.latestProduct {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.latestPics{
- min-width: 300px;
-  background-color: #F7F7F7;
+.latestPics {
+  min-width: 300px;
+  background-color: #f7f7f7;
   padding: 2rem;
 }
-.TpD{
+.TpD {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
   gap: 2rem;
 }
-.latestTitle{
+.latestTitle {
   color: #151875;
 }
-.latestPrice{
+.latestPrice {
   color: #151875;
   padding-right: 0.5rem;
 }
-.LatestDiscount{
-  color: #FB2448;
+.LatestDiscount {
+  color: #fb2448;
 }
-.LatPro{
+.LatPro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5rem;
   gap: 4rem;
 }
-.lph2{
-  /* color: #151875; */
-  color: #1A0B5B;
+.lph2 {
+  color: #1a0b5b;
   font-size: 28px;
   margin-top: 1rem;
-
 }
-.latestPick{
+.latestPick {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
@@ -129,8 +126,28 @@
   font-weight: 500;
   cursor: pointer;
 }
-.latestPick p:hover{
-  color: #FB4997;
+.latestPick p:hover {
+  color: #fb4997;
   /* text-decoration: underline; */
-  border-bottom: 1px solid #FB4997;
+  border-bottom: 1px solid #fb4997;
+}
+
+.productOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopNow {
+  display: flex;
+  flex-direction: column;
+  background: #eeeffb;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  width: 300px;
+}
+.viewCollection {
+  display: flex;
+  flex-direction: column;
+  background: #eeeffb;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  width: 300px;
 }
